@@ -4,9 +4,17 @@ import User from '../Exercises/User/User';
 
 const Body = () => {
     return (
-        <div>
-            <Exercises></Exercises>
-            <User></User>
+        <div className='container'>
+            <div className='row'>
+                <div className='col-8'>
+                    <Exercises></Exercises>
+                </div>
+                <div className='col-4'>
+                    <User></User>
+                </div>
+
+
+            </div>
         </div>
     );
 };
