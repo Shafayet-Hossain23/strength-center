@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { faCircleUser, faLocationDot, faUser } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
+import { addToDb, getFromDb } from '../utilities/Utilities';
 const User = (props) => {
     const { selected } = props;
     let total = 0;
@@ -13,7 +14,9 @@ const User = (props) => {
         const callBreakTimeTextId = document.getElementById('break-time')
         const innerTextTime = callId.innerText;
         callBreakTimeTextId.innerText = innerTextTime
+        addToDb(innerTextTime)
     }
+    const getBreakTimeFromLs = getFromDb()
     return (
         <div className='user' >
             <div >
@@ -67,7 +70,7 @@ const User = (props) => {
             <div>
                 <p className='mt-5 fw-bold'>Exercise details:</p>
                 <p className='border-style p-2'><span className='me-5'>Exercise time:</span> <span className='me-4'>{total} </span>min</p>
-                <p className='border-style p-2'><span className='me-5' >Break time:</span> <span id='break-time' className='me-4'>0 </span>min</p>
+                <p className='border-style p-2'><span className='me-5' >Break time:</span> <span id='break-time' className='me-4'>{getBreakTimeFromLs} </span>min</p>
             </div>
             <button className='btn-complete p-2'>Acitivity Completed</button>
 
