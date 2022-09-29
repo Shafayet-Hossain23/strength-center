@@ -19,17 +19,19 @@
 }
 
 .btn-list {
-    background-color: #dfdbf3;
+    color: white;
+    background-color: #826cf0;
     border: 1px solid;
     border-radius: 5px;
     margin-left: 10px;
+    padding: 5px;
     border-style: none !important;
 
 }
 
 .btn-list:hover {
 
-    background-color: rgb(247, 175, 162);
+    background-color: rgb(236, 92, 66);
 
 }
 

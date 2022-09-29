@@ -1,6 +1,6 @@
 .user {
     /* padding-top: 40px; */
-    margin-left: 21px;
+    margin-left: 20px;
     margin-top: 10px;
     background-color: white;
     height: 800px;
@@ -61,7 +61,8 @@
 }
 
 .btn-complete {
-    background-color: #dfdbf3;
+    color: white;
+    background-color: #826cf0;
     border-style: none !important;
 
     border: 1px solid;
@@ -74,7 +75,7 @@
 
 .btn-complete:hover {
 
-    background-color: rgb(247, 175, 162);
+    background-color: rgb(236, 106, 83);
 
 }
 
