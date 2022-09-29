@@ -3,6 +3,17 @@ import React from 'react';
 import { faCircleUser, faLocationDot, faUser } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
 import { addToDb, getFromDb } from '../utilities/Utilities';
+
+// ..toast..
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+toast.configure()
+
+
+
+
+
+
 const User = (props) => {
     const { selected } = props;
     let total = 0;
@@ -16,7 +27,12 @@ const User = (props) => {
         callBreakTimeTextId.innerText = innerTextTime
         addToDb(innerTextTime)
     }
-    const getBreakTimeFromLs = getFromDb()
+    const getBreakTimeFromLs = getFromDb();
+    // ..Toast..
+    const notify = () => {
+        toast("Wow so easy!")
+    };
+
     return (
         <div className='user' >
             <div >
@@ -72,7 +88,8 @@ const User = (props) => {
                 <p className='border-style p-2'><span className='me-5'>Exercise time:</span> <span className='me-4'>{total} </span>min</p>
                 <p className='border-style p-2'><span className='me-5' >Break time:</span> <span id='break-time' className='me-4'>{getBreakTimeFromLs} </span>min</p>
             </div>
-            <button className='btn-complete p-2'>Acitivity Completed</button>
+            <button onClick={notify} className='btn-complete p-2'>Acitivity Completed</button>
+
 
         </div>
     );
