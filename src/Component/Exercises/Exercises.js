@@ -22,7 +22,7 @@ const Exercises = () => {
         <div>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-8'>
+                    <div className='col-lg-8 col-sm-12'>
                         <div className='exercises container'>
                             <h4 className='default-color'>
                                 <FontAwesomeIcon icon={faWalking}></FontAwesomeIcon>
@@ -40,7 +40,7 @@ const Exercises = () => {
 
 
                     </div>
-                    <div className='col-4'>
+                    <div className='col-lg-4 col-sm-12'>
                         <User selected={selected}></User>
                     </div>
                 </div>

@@ -32,3 +32,17 @@
     background-color: rgb(247, 175, 162);
 
 }
+
+@media only screen and (max-width: 800px) {
+    .exercise img {
+        height: 200px;
+        width: 370px;
+        border-radius: 15px;
+    }
+
+    .btn-list {
+        margin-left: 5px;
+    }
+
+
+}

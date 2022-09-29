@@ -1,6 +1,6 @@
 .user {
     /* padding-top: 40px; */
-    margin-left: 30px;
+    margin-left: 21px;
     margin-top: 10px;
     background-color: white;
     height: 800px;
@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: #edecf3;
-    margin-left: 45px;
+    margin-left: 15px;
     margin-right: 15px;
     padding: 10px;
     border-radius: 10px;
@@ -76,4 +76,10 @@
 
     background-color: rgb(247, 175, 162);
 
+}
+
+@media only screen and (max-width: 800px) {
+    .user-info {
+        margin-left: 40px;
+    }
 }

@@ -1,6 +1,6 @@
 .exercises {
     margin-top: 70px;
-    margin-left: 10px;
+    margin-left: 8px;
 }
 
 
@@ -13,4 +13,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 25px;
+}
+
+@media only screen and (max-width: 800px) {
+    .exercises-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px;
+    }
 }
