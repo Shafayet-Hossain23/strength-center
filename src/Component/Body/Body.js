@@ -1,10 +1,11 @@
-import React from 'react';
+/* import React from 'react';
 import Exercises from '../Exercises/Exercises';
 import User from '../User/User';
 
 
 
 const Body = () => {
+
     return (
         <div className='container'>
             <div className='row'>
@@ -21,4 +22,4 @@ const Body = () => {
     );
 };
 
-export default Body;
+export default Body; */

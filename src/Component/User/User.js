@@ -2,12 +2,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { faCircleUser, faLocationDot, faUser } from '@fortawesome/free-solid-svg-icons'
 import './User.css'
-const User = () => {
+const User = (props) => {
+    const { selected } = props;
+    let total = 0;
+    for (const oneExercise of selected) {
+        total = total + parseInt(oneExercise.time)
+    }
     return (
         <div className='user' >
             <div >
                 <p>
-                    <FontAwesomeIcon className='userImage pt-4' icon={faCircleUser}></FontAwesomeIcon> <br />
+                    <FontAwesomeIcon className='userImage pt-5' icon={faCircleUser}></FontAwesomeIcon> <br />
                     <span>Md. Junayed Hossain</span>
                 </p>
                 <p>
@@ -53,6 +58,12 @@ const User = () => {
 
                 </div>
             </div>
+            <div>
+                <p className='mt-5 fw-bold'>Exercise details:</p>
+                <p className='border-style p-2'><span className='me-5'>Exercise time:</span> <span className='me-4'>{total} </span>min</p>
+                <p className='border-style p-2'><span className='me-5' >Break time:</span> <span className='me-4'>0 </span>min</p>
+            </div>
+            <button className='btn-complete p-2'>Acitivity Completed</button>
 
         </div>
     );
