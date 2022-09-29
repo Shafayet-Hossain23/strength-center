@@ -7,7 +7,7 @@ import { addToDb, getFromDb } from '../utilities/Utilities';
 // ..toast..
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-toast.configure()
+
 
 
 
@@ -30,7 +30,7 @@ const User = (props) => {
     const getBreakTimeFromLs = getFromDb();
     // ..Toast..
     const notify = () => {
-        toast("Wow so easy!")
+        toast("Welcome!")
     };
 
     return (
@@ -89,6 +89,7 @@ const User = (props) => {
                 <p className='border-style p-2'><span className='me-5' >Break time:</span> <span id='break-time' className='me-4'>{getBreakTimeFromLs} </span>min</p>
             </div>
             <button onClick={notify} className='btn-complete p-2'>Acitivity Completed</button>
+            <ToastContainer></ToastContainer>
 
 
         </div>

@@ -31,7 +31,8 @@ const Exercises = () => {
                             <h5 className='mt-4 fw-semibold mb-4'>Select today's exercise</h5>
                             <div className='exercises-container'>
                                 {
-                                    exercises.map((exercise) => <Exercise exercise={exercise}
+                                    exercises.map((exercise) => <Exercise
+                                        key={exercise.id} exercise={exercise}
                                         addToListHandler={addToListHandler}
                                     ></Exercise>)
                                 }
