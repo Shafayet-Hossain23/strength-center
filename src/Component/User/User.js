@@ -8,6 +8,12 @@ const User = (props) => {
     for (const oneExercise of selected) {
         total = total + parseInt(oneExercise.time)
     }
+    const breakTimeProcess = (id) => {
+        const callId = document.getElementById(id);
+        const callBreakTimeTextId = document.getElementById('break-time')
+        const innerTextTime = callId.innerText;
+        callBreakTimeTextId.innerText = innerTextTime
+    }
     return (
         <div className='user' >
             <div >
@@ -40,19 +46,19 @@ const User = (props) => {
 
             </div>
             <div className='mt-5'>
-                <p className='fw-bold'>Add a Break</p>
+                <p className='fw-bold'>Add a Break(minitues)</p>
                 <div className='break'>
-                    <div className='hover1' >
-                        <p className='rounded-circle bg-white p-2 m-2'>5m</p>
+                    <div>
+                        <button onClick={() => breakTimeProcess('5m')} id='5m' className=' hover1 rounded-circle bg-white p-2 m-2'>05</button>
                     </div>
-                    <div className='hover1'>
-                        <p className='rounded-circle bg-white p-2 m-2'>10m</p>
+                    <div>
+                        <button onClick={() => breakTimeProcess('10m')} id='10m' className=' hover1 rounded-circle bg-white p-2 m-2'>10</button>
                     </div>
-                    <div className='hover1'>
-                        <p className='rounded-circle bg-white p-2 m-2'>15m</p>
+                    <div>
+                        <button onClick={() => breakTimeProcess('15m')} id='15m' className=' hover1 rounded-circle bg-white p-2 m-2'>15</button>
                     </div>
-                    <div className='hover1'>
-                        <p className='rounded-circle bg-white p-2 m-2'>20m</p>
+                    <div>
+                        <button onClick={() => breakTimeProcess('20m')} id='20m' className=' hover1 rounded-circle bg-white p-2 m-2'>20</button>
                     </div>
 
 
@@ -61,7 +67,7 @@ const User = (props) => {
             <div>
                 <p className='mt-5 fw-bold'>Exercise details:</p>
                 <p className='border-style p-2'><span className='me-5'>Exercise time:</span> <span className='me-4'>{total} </span>min</p>
-                <p className='border-style p-2'><span className='me-5' >Break time:</span> <span className='me-4'>0 </span>min</p>
+                <p className='border-style p-2'><span className='me-5' >Break time:</span> <span id='break-time' className='me-4'>0 </span>min</p>
             </div>
             <button className='btn-complete p-2'>Acitivity Completed</button>
 

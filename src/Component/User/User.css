@@ -34,7 +34,7 @@
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     background-color: #edecf3;
-    margin-left: 15px;
+    margin-left: 45px;
     margin-right: 15px;
     padding: 10px;
     border-radius: 10px;
@@ -48,6 +48,7 @@
 .hover1:hover {
     color: tomato;
     border-radius: 15px;
+
 
 }
 
