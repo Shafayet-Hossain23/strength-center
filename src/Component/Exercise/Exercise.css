@@ -1,0 +1,33 @@
+.exercise {
+    border-radius: 15px;
+    background-color: white;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+}
+
+.exercise img {
+    height: 200px;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.info {
+    margin-top: 25px;
+    margin-left: 7px;
+}
+
+.btn-list {
+    background-color: #dfdbf3;
+    border: 1px solid;
+    border-radius: 5px;
+    margin-left: 10px;
+
+}
+
+.btn-list:hover {
+
+    background-color: rgb(247, 175, 162);
+
+}

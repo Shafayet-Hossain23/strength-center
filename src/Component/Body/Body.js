@@ -1,6 +1,7 @@
 import React from 'react';
 import Exercises from '../Exercises/Exercises';
-import User from '../Exercises/User/User';
+import User from '../User/User';
+
 
 
 const Body = () => {

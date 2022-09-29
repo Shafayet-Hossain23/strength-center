@@ -3,6 +3,14 @@
     margin-left: 10px;
 }
 
+
+
 .default-color {
     color: tomato;
+}
+
+.exercises-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
 }
