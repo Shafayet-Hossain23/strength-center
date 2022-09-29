@@ -1,8 +1,9 @@
 import React from 'react';
+import './question.css'
 
 const Question = () => {
     return (
-        <div className="bg-white  container my-5 pb-5 rounded-3">
+        <div className="text-style bg-white  container mt-5 pb-5 rounded-4 px-5">
             <div className="pt-5">
                 <h4>How does react works?</h4>
                 <p>While building client-side apps, a team of Facebook developers realized that the DOM is slow (The Document Object Model (DOM) is an application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated.). So, to make it faster, React implements a virtual DOM that is basically a DOM tree representation in JavaScript. So when it needs to read or write to the DOM, it will use the virtual representation of it. Then the virtual DOM will try to find the most efficient way to update the browser’s DOM.
@@ -16,6 +17,12 @@ const Question = () => {
 
                     <span className='fw-bold'>Props: </span>
                     Props are read-only components. It is an object which stores the value of attributes of a tag and work similar to the HTML attributes. It allows passing data from one component to other components. It is similar to function arguments and can be passed to the component the same way as arguments passed in a function. Props are immutable so we cannot modify the props from inside the component.</p>
+            </div>
+            <div>
+                <h4>What does useEffect do without load api?</h4>
+                <p>
+                    In React development, web application programming interfaces (APIs) are an integral part of single-page application (SPA) designs. APIs are the primary way for applications to programmatically communicate with servers to provide users with real-time data and to save user changes. In React applications, you will use APIs to load user preferences, display user information, fetch configuration or security information, and save application state changes.
+                </p>
             </div>
 
         </div>
